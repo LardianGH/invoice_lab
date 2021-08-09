@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>Idea Foundry</title>
+</head>
+
+<body>
+
+    <div class="container border px-1"> <!-- container -->
+        <div class="row"> <!-- level 1 row-->
+            <div class="col-9 pt-4"> <!-- logo col-->
+                <img src="IdeaFoundryLogo (1).png" class="img-fluid" alt="Idea Foundry Logo">
+            </div> <!-- end logo col-->
+            <div class="col-3"> <!-- stacked cols inside col-->
+                    <div class="offset-6 col-6 mb-4 mt-3"> <!-- print button col-->
+                        <button onclick="display()" type="button" class="btn btn-dark">Print This Page</button>
+                    </div> <!-- end print button col-->
+                    <div class="offset-3 col-9 mt-5"> <!-- client no col -->
+                        <h3 class="float-end">Client No: 4903</h3>
+                    </div> <!-- end client no col -->
+            </div> <!-- end stacked cols inside col-->
+        </div> <!-- end level 1 row-->
+<hr> <!-- line break -->
+        <div class="row"> <!-- level 2 -->
+            <div class="col-10"> <!-- date -->
+                <p><strong>Date: </strong>05/12/2019</p>
+            </div> <!-- end date -->
+            <div class="col-2"> <!-- invoice -->
+                <p class="float-end"><strong>Invoice No: </strong>19005</p>
+            </div> <!-- end invoice -->
+            
+        </div> <!-- end level 2 -->
+<hr> <!-- line break -->
+        <div class="row"> <!-- level 3 -->
+            <div class="col-2"> <!-- col invoice to -->
+                <p>
+                    <strong>Invoice to:</strong>
+                    <br>
+                    Mark Davis
+                    <br>
+                    333 Al Davis Way
+                    <br>
+                    Las Vegas, NV 89118
+                </p>
+            </div> <!-- col invoice to end-->
+            <div class="col-2 offset-8"> <!-- col pay to -->
+                <p class="float-end">
+                    <strong>Pay to:</strong>
+                    <br>
+                    Idea Foundry,lrc
+                    <br>
+                    2705 N. Enterprise St
+                    <br>
+                    Kernersville, NC 27284
+                </p>
+            </div> <!-- col pay to end-->
+        </div> <!-- end level 3 -->
+<hr> <!-- line break -->
+        <div class="row"> <!-- level 4 -->
+            <div class="col-12">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th scope="col">Service</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Rate</th>
+                            <th scope="col">QTY</th>
+                            <th scope="col">Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-active">
+                            <td scope="row">Design</th>
+                            <td>Website Design</td>
+                            <td>$60.00</td>
+                            <td>10</td>
+                            <td>$600.00</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">Development</th>
+                            <td>Website Development</td>
+                            <td>$150.00</td>
+                            <td>10</td>
+                            <td>$1500.00</td>
+                        </tr>
+                        <tr class="table-active">
+                            <td scope="row">Deployment</th>
+                            <td>Deployment and Hosting</td>
+                            <td>$450.00</td>
+                            <td>1</td>
+                            <td>$450.00</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" scope="row">Sub Total:</th>
+                            <td >$2550.00</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" scope="row">Sub Total:</th>
+                            <td >$2550.00</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" scope="row">Tax:</th>
+                            <td >$0.00</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" scope="row">Total:</th>
+                            <td >$2550.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div> <!-- end level 4 -->
+
+        <div class="row"> <!-- level 5 -->
+            <p><strong>Note: </strong> This is a computer generated receipt and does not require a physical signature.</p>
+        </div> <!-- end level 5 -->
+    </div> <!-- end container -->
+    
+</body>
+
+<script>
+    function display() {
+       window.print();
+    }
+ </script>
+
+</html>
